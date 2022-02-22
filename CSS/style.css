@@ -1,0 +1,11 @@
+body{
+    background-color: aqua;
+    font-size: 1.2em;
+}
+main{
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 550px;
+}

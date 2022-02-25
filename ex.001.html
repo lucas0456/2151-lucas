@@ -8,29 +8,69 @@
     <style>
         body {
             background-color: darkblue;
-            font-size: large;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-        } main {
-            color:blueviolet;
-            background-color: white;
-            padding: 18px;
+        } img {
+            width: 100%;
+        } .miniatuaras, .principais, .legenda {
+            width: 80%;
             margin: auto;
             text-align: center;
-            border-radius: 18px;
-            max-width: 500px;
-            float: inline-start;
+        } .imagem {
+            width: 16.66%;
+            float: left;
+        } .legenda {
+            color: bisque;
+            background-color: darkblue;
+            padding: 0.2em;
+        } h1 {
+            text-align: center;
+            color: bisque;
+            background-color: darkblue;
+            width: 80%;
+            margin: 15px auto;
+            margin-bottom: 4px;
+            padding: 0.2em;
+            font-size: 1.5em;
         }
     </style>
 </head>
 <body>
-    <main>
-        <h1>Me olha e me erra</h1>
-        <button id="qq" onclick="butao()">Clique em mim</button>
-        <p>Aperte o botão</p>
-    </main>
+
+        <h1 id="titulo">The avengers</h1>
+        <div id="miniatuaras">
+            <div class="imagem">
+                <img src="img/capitao.jpg" alt="capita" onmouseover="trocar(this.src,'Capitão america','Capitão das americas')">
+            </div>
+            <div class="imagem">
+                <img src="img/gaviao.jpg" alt="gaviao" onmouseover="trocar(this.src,'Gavião arquiro','Chiqui gavião')">
+            </div>
+            <div class="imagem">
+                <img src="img/homem_ferro.jpg" alt="homem" onmouseover="trocar(this.src,'Homem de ferro','homem de lata')">
+            </div>
+            <div class="imagem">
+                <img src="img/hulk.jpg" alt="hulk" onmouseover="trocar(this.src,'Hulk','shurk bombado')">
+            </div>
+            <div class="imagem">
+                <img src="img/thor.jpg" alt="thor" onmouseover="trocar(this.src,'Thor','solta choque')">
+            </div>
+            <div class="imagem">
+                <img src="img/viuva.jpg" alt="viuva" onmouseover="trocar(this.src,'Viuva negra','sem marido')">
+            </div>
+        </div>
+        <div id="principais">
+            <img src="img/capitao.jpg" alt="capita" id="principal">
+        </div>
+        <div id="legenda"><output id="legenda">
+            legenda dos herois
+        </output>
+        
+        </div>
+    
     <script>
-        function butao() {
-            alert("eba")
+        function trocar(caminho, titulo, legenda) {
+            document.getElementById("principal").src= caminho;
+            document.getElementById("titulo").value= titulo;
+            document.getElementById("legenda").value= legenda;
         }
     </script>
 </body>

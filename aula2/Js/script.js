@@ -7,7 +7,7 @@ function verifica() {
     let senha = document.form.senha.value;
 
     if(login == "admin" && senha == "admin") {
-        fechar()
+        fechar();
     }
     else{
         document.getElementById('msg').style.display="block";

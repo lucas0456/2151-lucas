@@ -1,0 +1,23 @@
+body{
+    margin: 0em;
+    background-color: white;
+    background-image: url(../img/155904889535944.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#centro{
+    width: 800px;
+    margin: auto;
+    color: black;
+    background-color: blue;
+}
+header{
+    background-color: blueviolet;
+    background-image: url(../img/download.png);
+    background-size: 100% 100%;
+    color: blue;
+    height: 13em;
+    max-width: 100%;
+    padding: 2em;
+    text-align: right;
+}

@@ -8,8 +8,9 @@ function verifica() {
 
     if(login == "admin" && senha == "admin") {
         fechar();
+        alert('Seja bem vindo!')
     }
     else{
         document.getElementById('msg').style.display="block";
     }
-}
+}    

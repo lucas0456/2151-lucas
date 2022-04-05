@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    color: bisque;
+    background-color: dodgerblue;
+    width: 80%;
+    margin: 15px auto;
+    margin-bottom: 4px;
+    padding: 0.2em;
+    font-size: 1.5em;
+ } img {
+     width: 100%;
+ } .miniaturas, .principal, .legenda {
+     width: 80%;
+     margin: auto;
+     text-align: center;
+ } .imagem { 
+     width: 16.66%;
+     float: left;
+ } .legenda {
+     color: bisque;
+     background-color: dodgerblue;
+     padding: 0.2em;
+ } body {
+     background-color: bisque;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }

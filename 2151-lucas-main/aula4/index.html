@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main id="pag">
+        <header>
+            Orçamento
+        </header>
+        <hr>
+        <form action="post" name="orcamento" id="orcamento">
+            <fieldset>
+                <legend> Dados de acesso</legend>
+
+                <label for="login">login</label>
+                <input type="text" name="login" required>
+
+                <label for="senha1">Senha</label>
+                <input type="password" name="senha1" required>
+
+                <label for="senha2">Confirmar senha</label>
+                <input type="password" name="senha2" required>
+
+                <p id="erro"> *As senhas estão erradas </p>
+            </fieldset>
+        </form>
+        <form action="post" name="pagar" id="pagar">
+            <fieldset>
+                <legend>Dados de pagamento</legend>
+
+                <label for=""></label>
+            </fieldset>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

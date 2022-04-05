@@ -1,0 +1,76 @@
+body{
+    margin: 0em;
+    background-color: white;
+    background-color: greenyellow;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#centro{
+    width: 1000px;
+    margin: auto;
+    color: black;
+    background-color: black;
+}
+header{
+    background-color: blueviolet;
+    background-image: url(../img/download\ 1.jpg);
+    background-size: 100% 100%;
+    color: white;
+    height: 13em;
+    max-width: 100%;
+    padding: 3em;
+    text-align: center;
+    
+}
+header h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 3em
+}
+header p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.8em;
+    font-weight: 900;
+}
+nav {
+    background-color: white;
+    color: black;
+    padding: 1em;
+    max-width: 100%;
+    height: 4em;
+}
+section{
+    background-color: green;
+    color: antiquewhite;
+    padding: 3.5em;
+    max-width: 100%;
+    min-height: 55em;
+    
+}
+footer {
+    background-color: black;
+    color: antiquewhite;
+    padding: 1em;
+    max-width: 100%;
+    min-height: 3em;
+} ul li {
+    float: left;
+    width: 15%;
+    background-color: black;
+    margin-left: 1em;
+    text-align: center;
+    list-style: none;
+} ul li:hover {
+    background-color: blue;
+} ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+} ul a:hover {
+    color: white;
+} img {
+    width: 73%;
+    margin-left: 7em;
+}

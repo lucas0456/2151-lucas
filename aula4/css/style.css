@@ -1,0 +1,77 @@
+body{
+    background-color:brown;
+    color: brown;
+}
+#pag{
+    width: 70%;
+    margin: 5% auto;
+    background-color: beige;
+    height: auto;
+    padding: 5%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px #000;
+}
+#orcamento{
+    width: 90%;
+    height: auto;
+    padding: 5%;
+    margin: auto;    
+}
+
+#orcamento input, #orcamento select{
+    width: 100%;
+    padding: 0.5%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    font-size: 110%;
+    color: saddlebrown;
+    border-radius:10px;    
+}
+
+#orcamento input:focus, #orcamento select:focus{
+    outline: none;
+}
+
+label{
+    font-size: 110%;
+    margin: 1% 0%;
+}
+
+fieldset{
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    border:0.5px solid #999;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: darkred;
+    color: beige;
+    padding: 2%;
+    width: 50%;
+}
+
+.clear{
+    clear: both;
+}
+
+#orcamento input[type=radio]{
+    width: 20px;
+}
+
+#msg{
+    color:darkblue;
+    font-weight: bold;
+    display: none;
+}
+#cnpj{
+    display: none;
+}
+
+#cartao{
+    display: none;
+}

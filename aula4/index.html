@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="Js/script.js"></script>
+    </head>    
+    <body>
+        <section id="pag">
+            <header> Orçamento </header>
+            <hr>
+            <form method="post" name="orcamento" id="orcamento" oninput="calculos(this)" onsubmit="return confirma(this)" action="envio.html" novalidate>
+                <fieldset>
+                    <legend> Dados de Acesso </legend>
+                    <label for="login"> Login </label>
+                    <input type="text" name="login" required>
+
+                    <label for="senha1"> Senha </label>
+                    <input type="password" name="senha1" oninput="senha()" required>           
+                    
+                    <label for="senha2"> Confirmar Senha </label>
+                    <input type="password" name="senha2" oninput="senha()" required>
+                    
+                    <p id="msg"> * As senhas não conferem </p>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend> Dados de Pagamento </legend> 
+                    <label for="usuario"> Tipo de Acesso </label>                     <div class="clear"></div>
+                    <input type="radio" name="tipo" value="Pessoa Física" checked onchange="pessoa('pf')"> <label> Pessoa Física </label>
+                    <input type="radio" name="tipo" value="Pessoa Jurídica" onchange="pessoa('pj')"> <label> Pessoa Jurídica </label>
+                    <div class="clear"></div>
+                    
+                    <div id="cpf">
+                        <label for="cpf"> CPF </label>
+                        <input type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" onkeypress="mascara_cpf(this)" maxlength="14" onkeyup="salto(this.name,this.value)" onkeydown="return somente_numero(event)">
+                    </div>
+                    
+                    <div id="cnpj">
+                        <label for="cnpj"> CNPJ </label>
+                        <input type="text" name="cnpj" placeholder="xx.xxx.xxx/xxxx-xx" onkeypress="mascara_cnpj(this)" maxlength="18" onkeyup="salto(this.name,this.value)" onkeydown="return somente_numero(event)">
+                    </div>                   
+                    
+                    <label for="telefone"> Telefone </label>
+                    <input type="tel" name="telefone" placeholder="(xx)xxxx-xxxx" onkeypress="mascara_tel(this)" maxlength="13" onkeyup="salto(this.name,this.value)" onkeydown="return somente_numero(event)">
+                    <label for="pagamento"> Forma de Pagamento </label>
+                    <select name="pagamento" onchange="abrir()">
+                        <option value="Dinheiro"> Dinheiro </option>
+                        <option value="Cartão"> Cartão </option>
+                        <option value="Cheque"> Cheque </option>
+                    </select>
+                    <div id="cartao">
+                        <fieldset>
+                            <legend> Cartão</legend>
+
+                            <label for="num"> Nº do Cartão </label>
+                            <input type="text" name="num">
+
+                            <label for="cod"> Código Segurança </label>
+                            <input type="text" name="cod">
+
+                            <label for="vencimento"> Vencimento </label>
+                            <input type="month" name="mes">
+                        </fieldset>
+                    </div> 
+                        
+                </fieldset>
+                
+                <fieldset>
+                    <legend> Produtos </legend>
+                    <table align="center" class="tabela" cellpadding="20">
+                        <tr>
+                            <td> Web Cam </td>
+                            <td> R$ 300,00 </td>
+                            <td> <input type="number" name="quant1" min="0" max="9" onkeydown="return setas(event)"> </td>
+                            <td> <input type="text" name="tot1"> </td>                            
+                        </tr>  
+                        
+                        <tr>
+                            <td> Placa de Vídeo </td>
+                            <td> R$ 700,00 </td>
+                            <td> <input type="number" name="quant2" min="0" max="9" onkeydown="return setas(event)"> </td>
+                            <td> <input type="text" name="tot2"> </td>                            
+                        </tr> 
+                        
+                        <tr>
+                            <td> Placa Mãe </td>
+                            <td> R$ 650,00 </td>
+                            <td> <input type="number" name="quant3" min="0" max="9" onkeydown="return setas(event)"> </td>
+                            <td> <input type="text" name="tot3"> </td>                            
+                        </tr> 
+                        
+                        <tr>
+                            <td> HD Externo </td>
+                            <td> R$ 299,00 </td>
+                            <td> <input type="number" name="quant4" min="0" max="9" onkeydown="return setas(event)"> </td>
+                            <td> <input type="text" name="tot4"> </td>                            
+                        </tr> 
+                        <tr>
+                            <td colspan="4" align="right"> 
+                                <h3> Total ==>  R$ <output id="total"> 0,00 </output> </h3> 
+                                <h3> Desconto ==> R$ <output id="desconto"> 0,00 </output> </h3> 
+                                <h3> Valor a Pagar ==> R$ <output id="apagar"> 0,00 </output> </h3> 
+                            </td>                          
+                        </tr>
+                    </table>
+                </fieldset>
+                <center>
+                    <input type="submit" value="Finalizar">
+                </center>                
+            </form>
+        </section>
+    </body>
+</html>

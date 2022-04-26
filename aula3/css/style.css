@@ -1,0 +1,148 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 1024px;
+    margin: 20px auto;
+}
+
+header{
+    background-color: #1c4923;
+    height: 3.5em;
+    width: 99.5%;
+}
+
+.img{
+    float: left;
+    margin: 0.5em 0 0 100px;
+   padding-right: 360px;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    text-align: center;
+    padding: 1.2em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+nav ul li a:hover{
+    color: #a6bafc;
+}
+
+nav a{
+    font-size: 0.8em;
+    letter-spacing: 5px;
+    transition: color 0.5s ease;
+}
+
+.destaque{
+    text-align: center;
+    padding: 50px 100px;
+}
+
+.texto-destaque h1{
+    font-size: 2.3em;
+    color: #1c4923;
+}
+
+.texto-destaque p{
+    color: #1f2022;
+    font-size: 1em;
+    line-height: 2;
+}
+
+.galeria{
+    color: #1c4923;
+    padding: 0 100px 0 100px;
+    overflow: auto;
+}
+
+.galeria-imagem{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.galeria-titulo{
+    color: #1c4923;
+    letter-spacing: 4px;
+    font-size: 0.55cm;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.galeria-conteudo{
+    color: #1f2022;
+    font-size: 0.99em;
+}
+
+.sobre{
+    background-color: #1c4923;
+    background-image: url(../img/detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 100px;
+    color: white;
+    border-radius: 18px;
+}
+
+.sobre h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.sobre p{
+    line-height: 1.5;
+    width: 70%;
+}
+
+.contato, .cadastro{
+    margin: 50px 0;
+}
+
+.contato address{
+    color:#1f2022;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-style: normal;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.cadastro{
+    color:#1f2022;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-style: normal;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 450px;
+}
+
+.rodape{
+    background-color: #1c4923;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    border-radius: 15px;
+}

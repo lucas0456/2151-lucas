@@ -12,8 +12,11 @@
     <title></title>
   </head>
   <body>
+    <div id="imagem">
+      <img id="foto">
+    </div>
     <section class="container" id="conteudo">
-    <h1>Tema  da festa</h1>
+    <h1><output id="titulo">Tema  da festa</output></h1>
 
     <form class="row g-3" name="form">
         <div class="col-md-6">
@@ -34,11 +37,11 @@
         </div>
         <div class="col-md-4">
           <label for="inputState" class="form-label">Terma</label>
-          <select id="inputState" class="form-select">
+          <select id="tema" class="form-select" onchange="trocatema()">
             <option selected>Selecionar...</option>
-            <option>Super mario bros</option>
-            <option>Princesa sofia</option>
-            <option>Pj masks</option>
+            <option value="mario">Super mario bros</option>
+            <option value="sofia">Princesa sofia</option>
+            <option value="masks">Pj masks</option>
           </select>
         </div>
         <div class="col-12">

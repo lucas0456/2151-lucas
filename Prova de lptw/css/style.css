@@ -1,0 +1,21 @@
+body{
+    background-color: white;
+    background-size: cover;
+
+}
+#local{
+    margin-top: 2%;
+    padding: 2%;
+    background-color: rgba(red, green, blue, alpha);
+    width: 50%;
+    margin-left: 15%;
+    border-radius: 15px;
+}
+h1{
+    margin-bottom: 3%;
+}
+#tit{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1cm;
+}

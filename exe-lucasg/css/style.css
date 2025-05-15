@@ -1,0 +1,22 @@
+body {
+    background-color: #0011ff;
+    color: white;
+    text-align: center;
+    font-family: serif;
+    font-size: 19px;
+}
+
+main {
+    margin: auto;
+    background-color: #1d9fb1;
+    width: 60%;
+    border-radius: 17px;
+    padding: 10px;
+}
+
+.botao {
+    background-color: #0011ff;
+    color: white;
+    border-radius: 7px;
+    padding: 6px 20px;
+}
